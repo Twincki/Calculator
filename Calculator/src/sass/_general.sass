@@ -1,5 +1,12 @@
+body
+  display: flex
+  align-items: center
+  justify-content: center
+  position: fixed
+  width: 100%
+  height: 100%
+
 .calc
-  margin: 5% auto
   height: 737px
   width: 410px
   &_top
@@ -34,26 +41,21 @@
       color: $color_calculation
 
 .calc
-  &_inner
-    padding: 22px 28px
-  &_wrapper
-    display: flex
-    justify-content: space-between
-    &_btn_operations
-      color: $btn_color_operations
-      font-size: $btn_font_operations
-      border: 0
-      margin-bottom: 25px
-      border-radius: 12px
-      width: 61px
-      height: 62px
-      background-color: $btn_bg_operations
-      transition: all .5s
-      &:hover
-        background-color: $btn_hover_operations
+  &_inner_btn_operations
+    color: $btn_color_operations
+    font-size: $btn_font_operations
+    border: 0
+    margin-bottom: 25px
+    border-radius: 12px
+    width: 61px
+    height: 62px
+    background-color: $btn_bg_operations
+    transition: all .5s
+    &:hover
+      background-color: $btn_hover_operations
       &:active
         background-color: $btn_active_operations
-    &_btn_numbers
+    &_inner_btn_numbers
       color: $btn_color_numbers
       font-size: $btn_font_numbers
       border: 0
@@ -73,7 +75,7 @@
     background-color: $btn_bg_operations_equals
 
 .calc
-  &_wrapper_btn_operations_comma
+  &_inner_btn_operations_comma
     width: 89px
     height: 62px
     background-color: $btn_bg_operations_comma
@@ -83,7 +85,7 @@
     padding-left: 35px
 
 .calc
-  &_wrapper_btn_numbers_zero
+  &_inner_btn_numbers_zero
     width: 158px
     height: 62px
     background-color: $btn_bg_numbers_zero

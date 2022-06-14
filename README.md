@@ -2,4 +2,4 @@
 
 Репозиторий создан для хранения тренеровочного макета калькулятора.
 
-Калькулятор: [Calculator](https://Calculator/src)
+Калькулятор: [Calculator](https://calculator-two-eta.vercel.app/)
